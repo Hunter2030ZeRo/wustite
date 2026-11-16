@@ -80,14 +80,14 @@ static ALLOC: mimalloc_safe::MiMalloc = mimalloc_safe::MiMalloc;
 #[global_allocator]
 static ALLOC: dhat::Alloc = dhat::Alloc;
 
-/// CLI configuration for Boa.
-static CLI_HISTORY: &str = ".boa_history";
+/// CLI configuration for Wustite.
+static CLI_HISTORY: &str = ".wustite_history";
 
 // Added #[allow(clippy::option_option)] because to StructOpt an Option<Option<T>>
 // is an optional argument that optionally takes a value ([--opt=[val]]).
 // https://docs.rs/structopt/0.3.11/structopt/#type-magic
 #[derive(Debug, Parser)]
-#[command(author, version, about, name = "boa")]
+#[command(author, version, about, name = "wustite")]
 #[allow(clippy::struct_excessive_bools)] // NOTE: Allow having more than 3 bools in struct
 struct Opt {
     /// The JavaScript file(s) to be evaluated.
