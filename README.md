@@ -1,4 +1,22 @@
-# Boa
+# Wustite
+
+Wustite is an experimental, Boa-based JavaScript engine focused on tiered JIT compilation and runtime performance.
+
+**Status:** This repository currently runs JavaScript using the original [Boa](https://github.com/boa-dev/boa) bytecode interpreter (v0.22.0). WXIR, profiling-based JIT compilation, Cranelift code generation, and deoptimization are planned, **not implemented**. No Wustite JIT speedup is claimed.
+
+### Run the JavaScript interpreter
+
+```sh
+cargo run --release -p boa_cli --bin wustite -- examples/wustite_smoke.js
+```
+
+Package/crate names such as `boa_engine` remain unchanged for upstream compatibility. See [Wustite architecture and JIT milestones](docs/wustite-jit.md).
+
+Original Boa code and documentation retain the upstream attribution and the `MIT OR Unlicense` terms.
+
+---
+
+## Upstream Boa documentation
 
 <p align="center">
   <a href="https://boajs.dev/">

@@ -2,7 +2,7 @@
 name = "boa_cli"
 keywords = ["javascript", "compiler", "js", "cli"]
 categories = ["command-line-utilities"]
-default-run = "boa"
+default-run = "wustite"
 description.workspace = true
 version.workspace = true
 edition.workspace = true
@@ -54,7 +54,7 @@ mimalloc-safe = { workspace = true, optional = true, features = [
 ] }
 
 [[bin]]
-name = "boa"
+name = "wustite"
 doc = false
 path = "src/main.rs"
 
